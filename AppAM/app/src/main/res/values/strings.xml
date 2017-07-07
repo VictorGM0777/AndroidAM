@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">AppAM</string>
+    <string name="app_name">Natura Reciclagem</string>
     <string name="app_logo">Logo Natura</string>
+    <string name="btn_login">Login</string>
+    <string name="id">ID</string>
+    <string name="senha">Senha</string>
+    <string name="reciclagem">Reciclagem</string>
+    <string name="usuario">consultor</string>
 </resources>

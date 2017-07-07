@@ -1,15 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="br.com.fiap.whiletrue.appam.MainActivity">
 
-    <ImageView
+    <ImageView android:id="@+id/logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/logo_natura"
-        android:contentDescription="@string/app_logo"/>
+        android:contentDescription="@string/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView android:id="@+id/lblReciclagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:text="@string/reciclagem"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/darkOrange"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <TextView android:id="@+id/lblId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblReciclagem"
+        android:text="@string/id"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText android:id="@+id/edtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblId"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:hint="@string/usuario"/>
+
+    <TextView android:id="@+id/lblSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtId"
+        android:text="@string/senha"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblSenha"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:inputType="textPassword"/>
+
+    <Button android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSenha"
+        android:text="@string/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:background="@color/orange"
+        android:textColor="@color/orangeRed"
+        android:layout_marginTop="50dp"
+        android:onClick="abreTela2"/>
+
+</RelativeLayout>
