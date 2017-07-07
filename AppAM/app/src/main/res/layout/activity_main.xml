@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.fiap.whiletrue.appam.MainActivity">
+    tools:context="br.com.fiap.whiletrue.appam.MainActivity"
+    android:background="@color/whiteSmoke">
 
     <ImageView android:id="@+id/logo"
         android:layout_width="150dp"
