@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">Natura Reciclagem</string>
     <string name="app_logo">Logo Natura</string>
     <string name="btn_login">Login</string>
@@ -6,4 +7,15 @@
     <string name="senha">Senha</string>
     <string name="reciclagem">Reciclagem</string>
     <string name="usuario">consultor</string>
+    <string name="bemvindo">Bem Vindo ao Reciclagem Natura!</string>
+
+    <string-array name="menu">
+        <item>Cadastro de Produtos</item>
+        <item>Lista de Coleta</item>
+        <item>Lista de Benefícios</item>
+        <item>Ranking Consultores</item>
+        <item>Pontos de Coleta</item>
+        <item>Sair</item>
+    </string-array>
+
 </resources>
