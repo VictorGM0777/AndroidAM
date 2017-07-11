@@ -4,30 +4,17 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/whiteSmoke"
-    tools:context=".RankingFragment">
+    tools:context=".ListaBeneficiosFragment">
 
     <TextView android:id="@+id/lblTituloRanking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/ranking_consultores"
+        android:text="@string/lista_de_beneficios"
         android:textAlignment="center"
         android:textColor="@color/orange"
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
         android:layout_centerHorizontal="true"/>
-
-    <Button android:id="@+id/btnAplicar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lblTituloRanking"
-        android:text="Aplicar"/>
-
-    <Button android:id="@+id/btnResgatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resgatar"
-        android:layout_below="@id/lblTituloRanking"
-        android:layout_toRightOf="@id/btnAplicar"/>
 
 </RelativeLayout>

@@ -47,6 +47,42 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
 
     }
 
+    public void mostrarTelaCadastro(View v) {
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction t = fm.beginTransaction();
+        t.replace(R.id.frame, new CadastroProdutoFragment());
+        t.commit();
+
+    }
+
+    public void mostrarTelaListaColeta(View v) {
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction t = fm.beginTransaction();
+        t.replace(R.id.frame, new ListaColetaFragment());
+        t.commit();
+
+    }
+
+    public void mostrarTelaListaBeneficios(View v) {
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction t = fm.beginTransaction();
+        t.replace(R.id.frame, new ListaBeneficiosFragment());
+        t.commit();
+
+    }
+
+    public void mostrarTelaPontosColeta(View v) {
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction t = fm.beginTransaction();
+        t.replace(R.id.frame, new PontosColetaFragment());
+        t.commit();
+
+    }
+
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
@@ -56,15 +92,15 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         if (position == 0) {
             mostrarTelaInicial();
         } else if (position == 1) {
-
+            mostrarTelaCadastro(view);
         } else if(position == 2) {
-
+            mostrarTelaListaColeta(view);
         } else if(position == 3) {
-
+            mostrarTelaListaBeneficios(view);
         } else if(position == 4) {
             mostrarTelaRanking(view);
         } else if (position == 5){
-
+            mostrarTelaPontosColeta(view);
         } else if (position == 6) {
             finish();
         }

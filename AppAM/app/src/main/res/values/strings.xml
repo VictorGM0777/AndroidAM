@@ -8,6 +8,11 @@
     <string name="reciclagem">Reciclagem</string>
     <string name="usuario">consultor</string>
     <string name="bemvindo">Bem Vindo ao Reciclagem Natura!</string>
+    <string name="cadastro_produtos_coletados">Cadastro de Produtos Coletados</string>
+    <string name="ranking_consultores">Ranking Consultores</string>
+    <string name="lista_de_coleta">Lista de Coleta</string>
+    <string name="lista_de_beneficios">Lista de Benefícios</string>
+    <string name="pontos_de_coleta">Pontos de Coleta</string>
 
     <string-array name="menu">
         <item>Início</item>

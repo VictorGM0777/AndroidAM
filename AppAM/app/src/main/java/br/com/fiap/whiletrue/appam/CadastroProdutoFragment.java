@@ -7,12 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by victo on 10/07/2017.
+ * Created by victo on 11/07/2017.
  */
 
-public class TelaInicioFragment extends Fragment implements View.OnClickListener {
+public class CadastroProdutoFragment extends Fragment implements View.OnClickListener {
 
-    public TelaInicioFragment() {
+    public CadastroProdutoFragment() {
 
     }
 
@@ -20,7 +20,7 @@ public class TelaInicioFragment extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         // v = tela do fragment
-        View v = inflater.inflate(R.layout.fragment_inicio, container, false);
+        View v = inflater.inflate(R.layout.fragment_cadastro, container, false);
 
         return v;
     }
