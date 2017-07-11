@@ -15,6 +15,104 @@
         android:textColor="@color/orange"
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:id="@+id/lblClienteCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_cliente"
+        android:layout_below="@id/lblTituloCadastro"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/darkOrange"/>
+
+    <Spinner android:id="@+id/spClientesCadastro"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/cmbClientes"
+        android:layout_toEndOf="@id/lblClienteCadastro"
+        android:layout_below="@id/lblTituloCadastro"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView android:id="@+id/lblConsultorCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_consultor"
+        android:layout_below="@id/lblClienteCadastro"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/darkOrange"/>
+
+    <TextView android:id="@+id/lblNomeConsultorCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teste"
+        android:layout_toEndOf="@id/lblClienteCadastro"
+        android:layout_below="@id/lblClienteCadastro"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="55dp"/>
+
+    <TextView android:id="@+id/lblListaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_produtos"
+        android:layout_below="@id/lblConsultorCadastro"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/darkOrange"/>
+
+    <TextView android:id="@+id/lblItemCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item"
+        android:textSize="15sp"
+        android:layout_below="@id/lblListaCadastro"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView android:id="@+id/lblQtdProdCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_quantidade"
+        android:textSize="15sp"
+        android:layout_below="@id/lblListaCadastro"
+        android:layout_toEndOf="@id/lblItemCadastro"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText android:id="@+id/edtItemCadastro"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/lblItemCadastro"
+        android:layout_marginTop="5dp"
+        android:inputType="text"/>
+
+    <EditText android:id="@+id/edtQtdCadastro"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/lblItemCadastro"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/edtItemCadastro"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <Button android:id="@+id/btnEnviarCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtQtdCadastro"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/orange"
+        android:text="@string/enviar"
+        android:textColor="@color/orangeRed"/>
 
 </RelativeLayout>

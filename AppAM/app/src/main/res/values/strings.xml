@@ -13,6 +13,13 @@
     <string name="lista_de_coleta">Lista de Coleta</string>
     <string name="lista_de_beneficios">Lista de Benefícios</string>
     <string name="pontos_de_coleta">Pontos de Coleta</string>
+    <string name="titulo_cliente">Cliente: </string>
+    <string name="titulo_consultor">Consultor(a): </string>
+    <string name="titulo_produtos">Produto: </string>
+    <string name="item">Item</string>
+    <string name="titulo_quantidade">Qtd: </string>
+    <string name="enviar">Enviar</string>
+    <string name="teste">Teste</string>
 
     <string-array name="menu">
         <item>Início</item>
@@ -22,6 +29,14 @@
         <item>Ranking Consultores</item>
         <item>Pontos de Coleta</item>
         <item>Sair</item>
+    </string-array>
+
+    <string-array name="cmbClientes">
+        <item>Teste 1</item>
+        <item>Teste 2</item>
+        <item>Teste 3</item>
+        <item>Teste 4</item>
+        <item>Teste 5</item>
     </string-array>
 
 </resources>
