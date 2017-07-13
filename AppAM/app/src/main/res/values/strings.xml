@@ -20,6 +20,18 @@
     <string name="titulo_quantidade">Qtd: </string>
     <string name="enviar">Enviar</string>
     <string name="teste">Teste</string>
+    <string name="listar_produtos_por">Listar Produtos por: </string>
+    <string name="titulo_por_cliente">Por Cliente: </string>
+    <string name="titulo_por_situacao">Por Situação: </string>
+    <string name="titulo_situacao">Situação: </string>
+    <string name="item_teste">Item Teste</string>
+    <string name="numero_teste">20</string>
+    <string name="titulo_itens">Itens: </string>
+    <string name="titulo_pontos">Pontos: </string>
+    <string name="titulo_total">Total: </string>
+    <string name="coletados">Coletados</string>
+    <string name="a_coletar">A Coletar</string>
+    <string name="pontos_teste">1000 pts</string>
 
     <string-array name="menu">
         <item>Início</item>
@@ -32,11 +44,16 @@
     </string-array>
 
     <string-array name="cmbClientes">
-        <item>Teste 1</item>
-        <item>Teste 2</item>
-        <item>Teste 3</item>
-        <item>Teste 4</item>
-        <item>Teste 5</item>
+        <item>Cliente Teste 1</item>
+        <item>ClienteTeste 2</item>
+        <item>Cliente Teste 3</item>
+        <item>Cliente Teste 4</item>
+        <item>Cliente Teste 5</item>
+    </string-array>
+
+    <string-array name="cmbSituacao">
+        <item>Coletado</item>
+        <item>Não Coletado</item>
     </string-array>
 
 </resources>
