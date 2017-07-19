@@ -17,6 +17,89 @@
         android:fontFamily="sans-serif-condensed"
         android:layout_centerHorizontal="true"/>
 
-    
+    <RadioGroup android:id="@+id/radioRanking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloRanking"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <RadioButton android:id="@+id/radioMensalRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="15sp"
+            android:text="@string/mensal"
+            android:textColor="@color/black"
+            android:buttonTint="@color/orange"/>
+
+        <RadioButton android:id="@+id/radioAnualRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/anual"
+            android:textColor="@color/black"
+            android:buttonTint="@color/orange"/>
+
+    </RadioGroup>
+
+    <TextView android:id="@+id/lblCodigoRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioRanking"
+        android:text="@string/codigo"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/lblNomeRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioRanking"
+        android:text="@string/nome"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/lblPontosRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioRanking"
+        android:text="@string/pontos"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <!-- EXIBIR UMA LISTA -->
+
+    <TextView android:id="@+id/txtCodigoRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPontosRanking"
+        android:text="@string/numero_teste"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtNomeConsultoraRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPontosRanking"
+        android:text="@string/teste"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtPontosRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblPontosRanking"
+        android:text="@string/pontos_teste"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <!-- EXIBIR UMA LISTA -->
 
 </RelativeLayout>

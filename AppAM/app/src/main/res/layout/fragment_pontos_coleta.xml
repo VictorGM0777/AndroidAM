@@ -6,7 +6,7 @@
     android:background="@color/whiteSmoke"
     tools:context=".PontosColetaFragment">
 
-    <TextView android:id="@+id/lblTituloRanking"
+    <TextView android:id="@+id/lblTituloPontosColeta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -16,5 +16,37 @@
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
         android:layout_centerHorizontal="true"/>
+
+    <Spinner android:id="@+id/spnEstadoPontosColetas"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloPontosColeta"
+        android:entries="@array/sp_estado"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner android:id="@+id/spnCidadePontosColeta"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloPontosColeta"
+        android:layout_toEndOf="@id/spnEstadoPontosColetas"
+        android:entries="@array/sp_cidade"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner android:id="@+id/spnBairroPontosColeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloPontosColeta"
+        android:layout_toEndOf="@id/spnCidadePontosColeta"
+        android:entries="@array/sp_bairro"
+        android:layout_marginTop="30dp"/>
+
+    <WebView android:id="@+id/wvPontosColeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnBairroPontosColeta"
+        android:layout_marginTop="30dp"
+        android:background="@color/orange">
+
+    </WebView>
 
 </RelativeLayout>
