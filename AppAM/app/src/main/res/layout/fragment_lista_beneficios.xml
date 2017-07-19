@@ -6,7 +6,7 @@
     android:background="@color/whiteSmoke"
     tools:context=".ListaBeneficiosFragment">
 
-    <TextView android:id="@+id/lblTituloRanking"
+    <TextView android:id="@+id/lblLstBeneficios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -16,5 +16,110 @@
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
         android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/lblConsultorLstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_consultor"
+        android:layout_below="@id/lblLstBeneficios"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/darkOrange"/>
+
+    <TextView android:id="@+id/lblNomeConsultorLstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teste"
+        android:layout_toEndOf="@id/lblConsultorLstBeneficios"
+        android:layout_below="@id/lblLstBeneficios"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView android:id="@+id/lblPontosLstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_pontos"
+        android:layout_below="@id/lblConsultorLstBeneficios"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/darkOrange"/>
+
+    <TextView android:id="@+id/lblNumPontosLstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pontos_teste"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/lblPontosLstBeneficios"
+        android:layout_below="@id/lblConsultorLstBeneficios"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"/>
+
+    <!-- EXIBIR UMA LISTA -->
+
+    <ImageView android:id="@+id/imgProduto1LstBeneficios"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/kaiak"
+        android:layout_below="@id/lblNumPontosLstBeneficios"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/txtProduto1LstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgProduto1LstBeneficios"
+        android:layout_centerHorizontal="true"
+        android:text="@string/produto_teste"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView android:id="@+id/txtVlProduto1LstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtProduto1LstBeneficios"
+        android:layout_centerHorizontal="true"
+        android:text="@string/preco_teste"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button android:id="@+id/btnResgatar1LstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_resgatar"
+        android:textColor="@color/whiteSmoke"
+        android:background="@color/orange"
+        android:layout_below="@id/txtVlProduto1LstBeneficios"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView android:id="@+id/imgProduto2LstBeneficios"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ekos"
+        android:layout_below="@id/btnResgatar1LstBeneficios"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/txtProduto2LstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgProduto2LstBeneficios"
+        android:layout_centerHorizontal="true"
+        android:text="@string/produto_teste"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView android:id="@+id/txtVlProduto2LstBeneficios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtProduto2LstBeneficios"
+        android:layout_centerHorizontal="true"
+        android:text="@string/preco_teste"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- EXIBIR UMA LISTA -->
 
 </RelativeLayout>
