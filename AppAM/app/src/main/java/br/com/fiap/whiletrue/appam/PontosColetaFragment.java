@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 /**
  * Created by victo on 11/07/2017.
@@ -21,6 +23,14 @@ public class PontosColetaFragment extends Fragment implements View.OnClickListen
 
         // v = tela do fragment
         View v = inflater.inflate(R.layout.fragment_pontos_coleta, container, false);
+
+        WebView wv = (WebView) v.findViewById(R.id.wvPontosColeta);
+        WebSettings ws = wv.getSettings();
+
+        ws.setJavaScriptEnabled(true);
+        ws.setSupportZoom(false);
+
+        wv.loadUrl("https://www.google.com.br/");
 
         return v;
     }
