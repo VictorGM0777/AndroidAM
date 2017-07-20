@@ -59,66 +59,89 @@
 
     <!-- EXIBIR UMA LISTA -->
 
-    <ImageView android:id="@+id/imgProduto1LstBeneficios"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/kaiak"
-        android:layout_below="@id/lblNumPontosLstBeneficios"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView android:id="@+id/txtProduto1LstBeneficios"
-        android:layout_width="wrap_content"
+    <ScrollView android:id="@+id/svLstBeneficios"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgProduto1LstBeneficios"
-        android:layout_centerHorizontal="true"
-        android:text="@string/produto_teste"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"/>
+        android:layout_below="@+id/lblNumPontosLstBeneficios"
+        android:layout_marginTop="10dp">
 
-    <TextView android:id="@+id/txtVlProduto1LstBeneficios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtProduto1LstBeneficios"
-        android:layout_centerHorizontal="true"
-        android:text="@string/preco_teste"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"/>
+        <RelativeLayout android:id="@+id/laySVLstBeneficios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button android:id="@+id/btnResgatar1LstBeneficios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_resgatar"
-        android:textColor="@color/whiteSmoke"
-        android:background="@color/orange"
-        android:layout_below="@id/txtVlProduto1LstBeneficios"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+            <ImageView android:id="@+id/imgProduto1LstBeneficios"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/kaiak"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"/>
 
-    <ImageView android:id="@+id/imgProduto2LstBeneficios"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/ekos"
-        android:layout_below="@id/btnResgatar1LstBeneficios"
-        android:layout_centerHorizontal="true"/>
+            <TextView android:id="@+id/txtProduto1LstBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgProduto1LstBeneficios"
+                android:layout_centerHorizontal="true"
+                android:text="@string/produto_teste"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
 
-    <TextView android:id="@+id/txtProduto2LstBeneficios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imgProduto2LstBeneficios"
-        android:layout_centerHorizontal="true"
-        android:text="@string/produto_teste"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"/>
+            <TextView android:id="@+id/txtVlProduto1LstBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtProduto1LstBeneficios"
+                android:layout_centerHorizontal="true"
+                android:text="@string/preco_teste"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
 
-    <TextView android:id="@+id/txtVlProduto2LstBeneficios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtProduto2LstBeneficios"
-        android:layout_centerHorizontal="true"
-        android:text="@string/preco_teste"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"/>
+            <Button android:id="@+id/btnResgatar1LstBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_resgatar"
+                android:textColor="@color/whiteSmoke"
+                android:background="@color/orange"
+                android:layout_below="@id/txtVlProduto1LstBeneficios"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView android:id="@+id/imgProduto2LstBeneficios"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ekos"
+                android:layout_below="@id/btnResgatar1LstBeneficios"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView android:id="@+id/txtProduto2LstBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgProduto2LstBeneficios"
+                android:layout_centerHorizontal="true"
+                android:text="@string/produto_teste"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView android:id="@+id/txtVlProduto2LstBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtProduto2LstBeneficios"
+                android:layout_centerHorizontal="true"
+                android:text="@string/preco_teste"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <Button android:id="@+id/btnResgatar2LstBeneficios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_resgatar"
+                android:textColor="@color/whiteSmoke"
+                android:background="@color/orange"
+                android:layout_below="@id/txtVlProduto2LstBeneficios"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
     <!-- EXIBIR UMA LISTA -->
 

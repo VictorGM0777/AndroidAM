@@ -49,4 +49,14 @@
 
     </WebView>
 
+    <Button android:id="@+id/btnPontosColeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wvPontosColeta"
+        android:layout_centerHorizontal="true"
+        android:background="@color/orange"
+        android:text="@string/pesquisar_ponto_de_coleta"
+        android:textColor="@color/whiteSmoke"
+        android:layout_marginTop="20dp"/>
+
 </RelativeLayout>
