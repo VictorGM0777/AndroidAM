@@ -43,6 +43,9 @@
     <string name="pesquisar_ponto_de_coleta">Pesquisar Ponto de Coleta</string>
     <string name="teste_mensal">Teste Mensal</string>
     <string name="teste_anual">Teste Anual</string>
+    <string name="titulo_lista_de_produtos">Lista de Produtos: </string>
+    <string name="perfume_kaiak">Perfume Kaiak</string>
+    <string name="produtos_ekos">Produtos Ekos</string>
 
     <string-array name="menu">
         <item>Início</item>

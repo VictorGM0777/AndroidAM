@@ -24,7 +24,8 @@
         android:textColor="@color/darkOrange"
         android:layout_centerHorizontal="true"
         android:textSize="25sp"
-        android:fontFamily="sans-serif-condensed"/>
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
 
     <TextView android:id="@+id/lblId"
         android:layout_width="wrap_content"
@@ -67,6 +68,7 @@
         android:layout_marginStart="100dp"
         android:background="@color/orange"
         android:textColor="@color/orangeRed"
+        android:textStyle="bold"
         android:layout_marginTop="50dp"
         android:onClick="abreTela2"/>
 

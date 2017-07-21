@@ -15,7 +15,8 @@
         android:textColor="@color/orange"
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
 
     <RadioGroup android:id="@+id/radioRanking"
         android:layout_width="match_parent"
@@ -51,7 +52,9 @@
         android:text="@string/codigo"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblNomeRanking"
         android:layout_width="wrap_content"
@@ -60,7 +63,9 @@
         android:text="@string/nome"
         android:layout_marginStart="75dp"
         android:layout_marginTop="20dp"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblPontosRanking"
         android:layout_width="wrap_content"
@@ -69,7 +74,9 @@
         android:text="@string/pontos"
         android:layout_marginStart="310dp"
         android:layout_marginTop="20dp"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"/>
 
     <!-- EXIBIR UMA LISTA -->
 
@@ -95,6 +102,168 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lblPontosRanking"
+        android:text="@string/pontos_teste"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtCodigoRanking2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoRanking"
+        android:text="@string/numero_teste"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtNomeConsultorRanking2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeConsultorRanking"
+        android:text="@string/teste"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtPontosRanking2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPontosRanking"
+        android:text="@string/pontos_teste"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtCodigoRanking3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoRanking2"
+        android:text="@string/numero_teste"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtNomeConsultorRanking3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeConsultorRanking2"
+        android:text="@string/teste"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtPontosRanking3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPontosRanking2"
+        android:text="@string/pontos_teste"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtCodigoRanking4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoRanking3"
+        android:text="@string/numero_teste"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtNomeConsultorRanking4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeConsultorRanking3"
+        android:text="@string/teste"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtPontosRanking4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPontosRanking3"
+        android:text="@string/pontos_teste"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtCodigoRanking5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoRanking4"
+        android:text="@string/numero_teste"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtNomeConsultorRanking5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeConsultorRanking4"
+        android:text="@string/teste"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtPontosRanking5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPontosRanking4"
+        android:text="@string/pontos_teste"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtCodigoRanking6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoRanking5"
+        android:text="@string/numero_teste"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtNomeConsultorRanking6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeConsultorRanking5"
+        android:text="@string/teste"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtPontosRanking6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPontosRanking5"
+        android:text="@string/pontos_teste"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtCodigoRanking7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCodigoRanking6"
+        android:text="@string/numero_teste"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtNomeConsultorRanking7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeConsultorRanking6"
+        android:text="@string/teste"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
+
+    <TextView android:id="@+id/txtPontosRanking7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPontosRanking6"
         android:text="@string/pontos_teste"
         android:layout_marginStart="310dp"
         android:layout_marginTop="20dp"

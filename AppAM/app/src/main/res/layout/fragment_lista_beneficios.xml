@@ -15,7 +15,8 @@
         android:textColor="@color/orange"
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblConsultorLstBeneficios"
         android:layout_width="wrap_content"
@@ -74,7 +75,8 @@
                 android:layout_height="150dp"
                 android:src="@drawable/kaiak"
                 android:layout_marginTop="30dp"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/perfume_kaiak"/>
 
             <TextView android:id="@+id/txtProduto1LstBeneficios"
                 android:layout_width="wrap_content"
@@ -102,14 +104,16 @@
                 android:background="@color/orange"
                 android:layout_below="@id/txtVlProduto1LstBeneficios"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
 
             <ImageView android:id="@+id/imgProduto2LstBeneficios"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/ekos"
                 android:layout_below="@id/btnResgatar1LstBeneficios"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/produtos_ekos"/>
 
             <TextView android:id="@+id/txtProduto2LstBeneficios"
                 android:layout_width="wrap_content"
@@ -138,7 +142,8 @@
                 android:layout_below="@id/txtVlProduto2LstBeneficios"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
     </ScrollView>

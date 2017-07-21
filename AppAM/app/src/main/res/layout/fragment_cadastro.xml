@@ -15,7 +15,8 @@
         android:textColor="@color/orange"
         android:textSize="25sp"
         android:fontFamily="sans-serif-condensed"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
 
     <TextView android:id="@+id/lblClienteCadastro"
         android:layout_width="wrap_content"
@@ -113,6 +114,7 @@
         android:layout_marginRight="30dp"
         android:background="@color/orange"
         android:text="@string/enviar"
-        android:textColor="@color/orangeRed"/>
+        android:textColor="@color/orangeRed"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
