@@ -31,7 +31,6 @@
     <Spinner android:id="@+id/spClientesCadastro"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:entries="@array/cmbClientes"
         android:layout_toEndOf="@id/lblClienteCadastro"
         android:layout_below="@id/lblTituloCadastro"
         android:textSize="20sp"

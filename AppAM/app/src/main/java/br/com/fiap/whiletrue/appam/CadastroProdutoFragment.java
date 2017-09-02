@@ -6,16 +6,34 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class CadastroProdutoFragment extends Fragment implements View.OnClickListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class CadastroProdutoFragment extends Fragment implements View.OnClickListener, AdapterView.OnItemSelectedListener {
 
     private Spinner spClientesCadastro;
     private TextView lblNomeConsultorCadastro;
     private EditText edtItemCadastro;
     private EditText edtQtdCadastro;
+    private List<Cliente> clientes;
+    private ArrayAdapter<Cliente> clientesAdpater;
+    private Cliente selecionado;
+
+    public void populaCliente() {
+
+        clientes = new ArrayList<Cliente>();
+
+        clientes.add(new Cliente("Cliente Teste 1"));
+        clientes.add(new Cliente("Cliente Teste 2"));
+        clientes.add(new Cliente("Cliente Teste 3"));
+
+    }
 
     public CadastroProdutoFragment() {
 
@@ -33,6 +51,10 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
         edtItemCadastro = v.findViewById(R.id.edtItemCadastro);
         edtQtdCadastro = v.findViewById(R.id.edtQtdCadastro);
 
+        spClientesCadastro.setOnItemSelectedListener(this);
+        populaCliente();
+        populaSpinner();
+
         return v;
     }
 
@@ -41,8 +63,29 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
 
         if(view.getId() == R.id.btnEnviarCadastro) {
             Log.i("EVENTO", "Gerou evento: Clicou no botão TESTE!!!");
+;
+            Log.i("cliente: ", selecionado.toString());
+
         }
 
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+        Cliente sel = (Cliente) adapterView.getItemAtPosition(i);
+        this.selecionado = sel;
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    private void populaSpinner() {
+        clientesAdpater = new ArrayAdapter<Cliente>(this.getContext(), android.R.layout.simple_spinner_item, this.clientes);
+        spClientesCadastro.setAdapter(clientesAdpater);
     }
 
 }
