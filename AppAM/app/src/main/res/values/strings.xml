@@ -47,6 +47,8 @@
     <string name="perfume_kaiak">Perfume Kaiak</string>
     <string name="produtos_ekos">Produtos Ekos</string>
     <string name="coletado">Coletado</string>
+    <string name="salvar">Salvar</string>
+    <string name="buscar">Buscar</string>
 
     <string-array name="menu">
         <item>Início</item>

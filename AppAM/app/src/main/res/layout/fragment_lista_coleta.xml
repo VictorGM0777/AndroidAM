@@ -26,7 +26,8 @@
         android:textSize="20sp"
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
-        android:textColor="@color/darkOrange"/>
+        android:textColor="@color/darkOrange"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblNomeConsultorLista"
         android:layout_width="wrap_content"
@@ -36,17 +37,8 @@
         android:layout_below="@id/lblTituloLista"
         android:textSize="20sp"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="5dp"/>
-
-    <TextView android:id="@+id/lblFiltroLista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/listar_produtos_por"
-        android:layout_below="@id/lblConsultorLista"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="20dp"
-        android:textColor="@color/darkOrange"/>
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblPorClienteLista"
         android:layout_width="wrap_content"
@@ -54,9 +46,10 @@
         android:text="@string/titulo_cliente"
         android:textSize="18sp"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/lblFiltroLista"
+        android:layout_below="@+id/lblConsultorLista"
         android:layout_marginStart="20dp"
-        android:textColor="@color/darkOrange"/>
+        android:textColor="@color/darkOrange"
+        android:textStyle="bold"/>
 
 
 
@@ -66,7 +59,21 @@
         android:layout_below="@id/lblPorClienteLista"
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
-        android:entries="@array/cmbClientes"/>
+        android:entries="@array/cmbClientes"
+        />
+
+
+    <Button android:id="@+id/btnBuscaLista"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/orange"
+        android:text="@string/buscar"
+        android:layout_toRightOf="@id/lblPorClienteLista"
+        android:layout_below="@id/lblPorClienteLista"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/orangeRed"
+        android:textStyle="bold"/>
 
 
 
@@ -79,7 +86,8 @@
         android:layout_below="@id/spClientesLista"
         android:layout_marginTop="30dp"
         android:textSize="20sp"
-        android:textColor="@color/orangeRed"/>
+        android:textColor="@color/orangeRed"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblItemLista"
         android:layout_width="wrap_content"
@@ -89,7 +97,8 @@
         android:textColor="@color/darkOrange"
         android:layout_below="@id/lblProdutosLista"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblQtdLista"
         android:layout_width="wrap_content"
@@ -98,8 +107,9 @@
         android:textSize="15sp"
         android:textColor="@color/darkOrange"
         android:layout_below="@id/lblProdutosLista"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblPontosLista"
         android:layout_width="wrap_content"
@@ -108,19 +118,21 @@
         android:textSize="15sp"
         android:textColor="@color/darkOrange"
         android:layout_below="@id/lblProdutosLista"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblPorSituacaoLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/titulo_situacao"
-        android:textSize="18sp"
+        android:textSize="15sp"
         android:layout_toEndOf="@id/lblPorClienteLista"
         android:layout_marginTop="15dp"
         android:layout_below="@+id/lblProdutosLista"
-        android:layout_marginStart="240dp"
-        android:textColor="@color/darkOrange"/>
+        android:layout_marginStart="150dp"
+        android:textColor="@color/darkOrange"
+        android:textStyle="bold"/>
 
     <!-- EXIBIR UMA LISTA -->
 
@@ -131,7 +143,8 @@
         android:textSize="15sp"
         android:layout_below="@id/lblItemLista"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/vlQtdLista"
         android:layout_width="wrap_content"
@@ -139,8 +152,9 @@
         android:text="@string/numero_teste"
         android:textSize="15sp"
         android:layout_below="@id/lblItemLista"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/vlPontosLista"
         android:layout_width="wrap_content"
@@ -148,18 +162,32 @@
         android:text="@string/numero_teste"
         android:textSize="15sp"
         android:layout_below="@id/lblItemLista"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="15dp" />
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
 
     <CheckBox android:id="@+id/chColetado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lblItemLista"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="220dp"
         android:layout_marginTop="10dp"
-        android:text="@string/coletado"/>
+        android:text="@string/coletado"
+        />
 
     <!-- EXIBIR UMA LISTA -->
+
+    <Button android:id="@+id/btnSalvarLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_below="@id/vlItemLista"
+        android:layout_marginStart="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/orange"
+        android:text="@string/salvar"
+        android:textColor="@color/orangeRed"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblTotalLista"
         android:layout_width="wrap_content"
@@ -169,7 +197,8 @@
         android:layout_marginBottom="20dp"
         android:text="@string/titulo_total"
         android:textSize="25sp"
-        android:textColor="@color/orangeRed" />
+        android:textColor="@color/orangeRed"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblColetadosLista"
         android:layout_width="wrap_content"
@@ -178,7 +207,8 @@
         android:textColor="@color/darkOrange"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="110dp"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/lblAColetarLista"
         android:layout_width="wrap_content"
@@ -188,7 +218,8 @@
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@id/lblColetadosLista"
         android:layout_marginStart="90dp"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/txtPontosColetadosLista"
         android:layout_width="wrap_content"
@@ -197,7 +228,8 @@
         android:textSize="20sp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="110dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
 
     <TextView android:id="@+id/txtPontosAColetarLista"
         android:layout_width="wrap_content"
@@ -206,6 +238,7 @@
         android:textSize="20sp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="260dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

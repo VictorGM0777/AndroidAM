@@ -19,12 +19,12 @@
         android:layout_height="wrap_content"
         android:text="@string/bemvindo"
         android:textColor="@color/orange"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textAlignment="center"
         android:fontFamily="sans-serif-condensed"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/logo2"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:textStyle="bold"/>
 
 </RelativeLayout>
