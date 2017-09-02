@@ -62,9 +62,19 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
     public void onClick(View view) {
 
         if(view.getId() == R.id.btnEnviarCadastro) {
+
             Log.i("EVENTO", "Gerou evento: Clicou no botão TESTE!!!");
-;
             Log.i("cliente: ", selecionado.toString());
+
+            Produto p = new Produto();
+
+            p.setNome(edtItemCadastro.getText().toString());
+            p.setQuantidade(Integer.parseInt(edtQtdCadastro.getText().toString()));
+            p.setNomeCliente(selecionado.toString());
+
+            Log.i("teste",p.getNomeCliente());
+            Log.i("teste",p.getNome());
+            Log.i("teste",String.valueOf(p.getQuantidade()));
 
         }
 
