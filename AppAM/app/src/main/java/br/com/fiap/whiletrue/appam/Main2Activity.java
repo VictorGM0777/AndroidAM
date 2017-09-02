@@ -2,7 +2,9 @@ package br.com.fiap.whiletrue.appam;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -104,6 +106,22 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         } else if (position == 6) {
             finish();
         }
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        new AlertDialog.Builder(this)
+                .setMessage("Deseja realmente sair?")
+                .setCancelable(false)
+                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Main2Activity.this.finish();
+                    }
+                })
+                .setNegativeButton("Não", null)
+                .show();
 
     }
 }

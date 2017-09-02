@@ -58,16 +58,7 @@
         android:layout_marginStart="20dp"
         android:textColor="@color/darkOrange"/>
 
-    <TextView android:id="@+id/lblPorSituacaoLista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/titulo_situacao"
-        android:textSize="18sp"
-        android:layout_toEndOf="@id/lblPorClienteLista"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/lblFiltroLista"
-        android:layout_marginStart="130dp"
-        android:textColor="@color/darkOrange"/>
+
 
     <Spinner android:id="@+id/spClientesLista"
         android:layout_width="wrap_content"
@@ -77,13 +68,7 @@
         android:layout_marginTop="5dp"
         android:entries="@array/cmbClientes"/>
 
-    <Spinner android:id="@+id/spSituacaoLista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/spClientesLista"
-        android:layout_toEndOf="@id/spClientesLista"
-        android:layout_marginStart="15dp"
-        android:entries="@array/cmbSituacao" />
+
 
     <TextView
         android:id="@+id/lblProdutosLista"
@@ -113,7 +98,7 @@
         android:textSize="15sp"
         android:textColor="@color/darkOrange"
         android:layout_below="@id/lblProdutosLista"
-        android:layout_marginStart="245dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="15dp" />
 
     <TextView android:id="@+id/lblPontosLista"
@@ -123,8 +108,19 @@
         android:textSize="15sp"
         android:textColor="@color/darkOrange"
         android:layout_below="@id/lblProdutosLista"
-        android:layout_marginStart="290dp"
+        android:layout_marginStart="220dp"
         android:layout_marginTop="15dp" />
+
+    <TextView android:id="@+id/lblPorSituacaoLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_situacao"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/lblPorClienteLista"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lblProdutosLista"
+        android:layout_marginStart="240dp"
+        android:textColor="@color/darkOrange"/>
 
     <!-- EXIBIR UMA LISTA -->
 
@@ -143,7 +139,7 @@
         android:text="@string/numero_teste"
         android:textSize="15sp"
         android:layout_below="@id/lblItemLista"
-        android:layout_marginStart="245dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="15dp" />
 
     <TextView android:id="@+id/vlPontosLista"
@@ -152,8 +148,16 @@
         android:text="@string/numero_teste"
         android:textSize="15sp"
         android:layout_below="@id/lblItemLista"
-        android:layout_marginStart="290dp"
+        android:layout_marginStart="220dp"
         android:layout_marginTop="15dp" />
+
+    <CheckBox android:id="@+id/chColetado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblItemLista"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/coletado"/>
 
     <!-- EXIBIR UMA LISTA -->
 
