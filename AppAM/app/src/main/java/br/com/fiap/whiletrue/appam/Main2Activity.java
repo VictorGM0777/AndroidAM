@@ -104,7 +104,18 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         } else if (position == 5){
             mostrarTelaPontosColeta(view);
         } else if (position == 6) {
-            finish();
+
+            new AlertDialog.Builder(this)
+                    .setMessage("Deseja realmente sair?")
+                    .setCancelable(false)
+                    .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            Main2Activity.this.finish();
+                        }
+                    })
+                    .setNegativeButton("Não", null)
+                    .show();
+
         }
 
     }

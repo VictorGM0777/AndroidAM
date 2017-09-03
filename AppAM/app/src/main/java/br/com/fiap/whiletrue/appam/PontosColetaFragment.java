@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 /**
  * Created by victo on 11/07/2017.
@@ -32,11 +33,17 @@ public class PontosColetaFragment extends Fragment implements View.OnClickListen
 
         wv.loadUrl("https://www.google.com.br/");
 
+        v.findViewById(R.id.btnPontosColeta).setOnClickListener(this);
+
         return v;
     }
 
     @Override
     public void onClick(View view) {
+
+        if(view.getId() == R.id.btnPontosColeta) {
+            Toast.makeText(view.getContext(), "Pesquisando ponto de coleta...", Toast.LENGTH_SHORT).show();
+        }
 
     }
 

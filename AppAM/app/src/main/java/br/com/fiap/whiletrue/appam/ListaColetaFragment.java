@@ -62,8 +62,13 @@ public class ListaColetaFragment extends Fragment implements View.OnClickListene
             vlPontosLista.setVisibility(View.VISIBLE);
             chColetado.setVisibility(View.VISIBLE);
 
-            txtPontosColetadosLista.setText("0 pts");
-            txtPontosAColetarLista.setText("20 pts");
+            if(chColetado.isChecked()) {
+                txtPontosColetadosLista.setText("20 pts");
+                txtPontosAColetarLista.setText("0 pts");
+            } else {
+                txtPontosColetadosLista.setText("0 pts");
+                txtPontosAColetarLista.setText("20 pts");
+            }
 
         } else if (view.getId() == R.id.btnSalvarLista) {
 
