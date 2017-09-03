@@ -144,7 +144,8 @@
         android:layout_below="@id/lblItemLista"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:visibility="invisible"/>
 
     <TextView android:id="@+id/vlQtdLista"
         android:layout_width="wrap_content"
@@ -154,7 +155,8 @@
         android:layout_below="@id/lblItemLista"
         android:layout_marginStart="120dp"
         android:layout_marginTop="15dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:visibility="invisible"/>
 
     <TextView android:id="@+id/vlPontosLista"
         android:layout_width="wrap_content"
@@ -164,7 +166,8 @@
         android:layout_below="@id/lblItemLista"
         android:layout_marginStart="170dp"
         android:layout_marginTop="15dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:visibility="invisible"/>
 
     <CheckBox android:id="@+id/chColetado"
         android:layout_width="wrap_content"
@@ -173,7 +176,7 @@
         android:layout_marginStart="220dp"
         android:layout_marginTop="10dp"
         android:text="@string/coletado"
-        />
+        android:visibility="invisible"/>
 
     <!-- EXIBIR UMA LISTA -->
 
@@ -224,7 +227,7 @@
     <TextView android:id="@+id/txtPontosColetadosLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pontos_teste"
+        android:text="@string/pontos_zerados"
         android:textSize="20sp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="110dp"
@@ -234,7 +237,7 @@
     <TextView android:id="@+id/txtPontosAColetarLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pontos_teste"
+        android:text="@string/pontos_zerados"
         android:textSize="20sp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="260dp"

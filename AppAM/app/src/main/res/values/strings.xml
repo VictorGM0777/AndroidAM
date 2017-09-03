@@ -32,6 +32,7 @@
     <string name="coletados">Coletados</string>
     <string name="a_coletar">A Coletar</string>
     <string name="pontos_teste">1000 pts</string>
+    <string name="pontos_zerados">0 pts</string>
     <string name="produto_teste">Produto Teste</string>
     <string name="preco_teste">R$ 100,00</string>
     <string name="btn_resgatar">Resgatar</string>
@@ -62,10 +63,8 @@
 
     <string-array name="cmbClientes">
         <item>Cliente Teste 1</item>
-        <item>ClienteTeste 2</item>
+        <item>Cliente Teste 2</item>
         <item>Cliente Teste 3</item>
-        <item>Cliente Teste 4</item>
-        <item>Cliente Teste 5</item>
     </string-array>
 
     <string-array name="cmbSituacao">

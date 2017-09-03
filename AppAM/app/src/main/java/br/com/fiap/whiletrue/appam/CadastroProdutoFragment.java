@@ -11,7 +11,18 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,18 +79,40 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
 
             Produto p = new Produto();
 
-           try{
-                 p.setNome(edtItemCadastro.getText().toString());
-                 p.setQuantidade(Integer.parseInt(edtQtdCadastro.getText().toString()));
-                 p.setNomeCliente(selecionado.toString());
+            try {
 
-                 Log.i("teste",p.getNomeCliente());
-                 Log.i("teste",p.getNome());
-                 Log.i("teste",String.valueOf(p.getQuantidade()));
-           }catch (Exception ex){
+                p.setNome(edtItemCadastro.getText().toString());
+                p.setQuantidade(Integer.parseInt(edtQtdCadastro.getText().toString()));
+                p.setNomeCliente(selecionado.toString());
 
-           }
+                Log.i("teste",p.getNomeCliente());
+                Log.i("teste",p.getNome());
+                Log.i("teste",String.valueOf(p.getQuantidade()));
 
+
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
+            JSONObject produto = new JSONObject();
+
+            try {
+
+                produto.put("nome", p.getNome());
+                produto.put("quantidade", p.getQuantidade());
+                produto.put("nomeCliente", p.getNomeCliente());
+
+                Log.i("Produto: ", produto.toString());
+
+                requisicaoPOST(view, produto);
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            Toast.makeText(this.getContext(), "Produto(s) " + p.getNome() + " cadastrado(s) com sucesso!", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -100,6 +133,47 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
     private void populaSpinner() {
         clientesAdpater = new ArrayAdapter<Cliente>(this.getContext(), android.R.layout.simple_spinner_item, this.clientes);
         spClientesCadastro.setAdapter(clientesAdpater);
+    }
+
+    private void requisicaoPOST(View v, JSONObject produto) {
+
+        final String URL = "http://192.168.56.1:8080/ImobiliariaWeb/ImobiliariaServlet";
+
+        RequestQueue reqQueue = Volley.newRequestQueue(this.getContext());
+
+        VolleyJSONObjectResponse resp = new VolleyJSONObjectResponse();
+        VolleyErroRequest fail = new VolleyErroRequest();
+
+        JsonObjectRequest jsonReq = new JsonObjectRequest(URL, produto, resp, fail);
+        reqQueue.add(jsonReq);
+
+    }
+
+    private class VolleyErroRequest implements Response.ErrorListener {
+
+        @Override
+        public void onErrorResponse(VolleyError error) {
+            Log.i("teste",error.toString());
+        }
+    }
+
+    private class VolleyJSONObjectResponse implements Response.Listener<JSONObject> {
+
+        @Override
+        public void onResponse(JSONObject response) {
+
+            try {
+
+                String metodo = response.getString("metodo");
+                String msg = response.getString("msg");
+
+                Log.i("teste",metodo + "/" + msg);
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 
 }
