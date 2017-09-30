@@ -84,12 +84,11 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
                 p.setNome(edtItemCadastro.getText().toString());
                 p.setQuantidade(Integer.parseInt(edtQtdCadastro.getText().toString()));
                 p.setNomeCliente(selecionado.toString());
+                p.setNomeConsultor("Teste");
 
                 Log.i("teste",p.getNomeCliente());
                 Log.i("teste",p.getNome());
                 Log.i("teste",String.valueOf(p.getQuantidade()));
-
-
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -103,6 +102,7 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
                 produto.put("nome", p.getNome());
                 produto.put("quantidade", p.getQuantidade());
                 produto.put("nomeCliente", p.getNomeCliente());
+                produto.put("nomeConsultor", p.getNomeConsultor());
 
                 Log.i("Produto: ", produto.toString());
 
@@ -137,7 +137,7 @@ public class CadastroProdutoFragment extends Fragment implements View.OnClickLis
 
     private void requisicaoPOST(View v, JSONObject produto) {
 
-        final String URL = "http://192.168.56.1:8080/ImobiliariaWeb/ImobiliariaServlet";
+        final String URL = "http://192.168.56.1:8080/WebServiceAM/rest/produto";
 
         RequestQueue reqQueue = Volley.newRequestQueue(this.getContext());
 

@@ -10,6 +10,7 @@ public class Produto {
     private String nome;
     private int quantidade;
     private String nomeCliente;
+    private String nomeConsultor;
 
     public int getQuantidade() {
         return quantidade;
@@ -41,5 +42,13 @@ public class Produto {
 
     public String getNome() {
         return nome;
+    }
+
+    public String getNomeConsultor() {
+        return nomeConsultor;
+    }
+
+    public void setNomeConsultor(String nomeConsultor) {
+        this.nomeConsultor = nomeConsultor;
     }
 }
