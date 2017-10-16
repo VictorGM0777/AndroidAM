@@ -50,6 +50,7 @@
     <string name="coletado">Coletado</string>
     <string name="salvar">Salvar</string>
     <string name="buscar">Buscar</string>
+    <string name="natura_reciclagem">Natura Reciclagem</string>
 
     <string-array name="menu">
         <item>Início</item>
